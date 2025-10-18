@@ -13,3 +13,32 @@ body {
   font-family: "Courier New", Courier, monospace;
   border-bottom: 5px solid rgb(60, 40, 90);
 }
+
+.certname {
+  margin: 0;
+  margin-top: 25px;
+  margin-left: 10px;
+  color: rgb(220, 220, 220);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.certdes {
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 10px;
+  color: rgb(220, 220, 220);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.certimg {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 300px;
+  border-radius: 3px;
+  border-style: inset;
+}
+
+#certs {
+  display: flex;
+  gap: 10px;
+}
