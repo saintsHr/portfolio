@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background-color: rgb(20, 15, 30);
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#title {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(220, 220, 220);
+  font-family: "Courier New", Courier, monospace;
+  border-bottom: 5px solid rgb(60, 40, 90);
+}
