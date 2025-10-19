@@ -48,3 +48,19 @@ body {
 #home img:hover {
   width: 35px;
 }
+
+.skillTitle {
+  color: rgb(220, 220, 220);
+  margin-left: 10px;
+}
+
+.skillList {
+  color: rgb(220, 220, 220);
+}
+
+.divider {
+  width: 700px;
+  height: 4px;
+  background-color: rgb(220, 220, 220);
+  margin-top: 30px;
+}
