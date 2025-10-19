@@ -48,3 +48,22 @@ body {
 #home img:hover {
   width: 35px;
 }
+
+.projdes {
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 10px;
+  color: rgb(220, 220, 220);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.projimg {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 300px;
+  border-radius: 3px;
+  border-style: inset;
+  border-color: rgb(60, 40, 90);
+  border-width: 5px;
+  cursor: pointer;
+}
