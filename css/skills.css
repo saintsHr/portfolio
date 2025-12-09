@@ -41,11 +41,6 @@ main section ul {
   main section {
     flex-basis: 450px;
   }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-  }
 }
 
 

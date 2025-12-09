@@ -58,6 +58,15 @@ main section.btns a.redirect:hover {
   font-size: 16px;
 }
 
+footer {
+  width: 100%;
+  display: flex;
+  background-color: var(--color-v5);
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 @media screen and (min-width: 480px) {
   header h1 {

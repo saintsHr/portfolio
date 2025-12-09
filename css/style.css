@@ -74,13 +74,6 @@ header nav a img {
 }
 
 
-footer {
-  width: 100%;
-  display: flex;
-  background-color: var(--color-v5);
-  justify-content: center;
-  align-items: center;
-}
 
 #github {
   margin: 10px 25px;
@@ -114,6 +107,7 @@ footer {
 a {
   text-decoration: none;
 }
+
 
 @media screen and (min-width: 480px) {
   header nav a img {
