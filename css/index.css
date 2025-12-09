@@ -75,6 +75,11 @@ main section.btns a.redirect:hover {
   main section.introduction p {
     font-size: 0.9em;
   }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 @media screen and (min-height: 720px) {
@@ -107,11 +112,6 @@ main section.btns a.redirect:hover {
   main section.btns {
     flex-direction: row;
     justify-content: center;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
   }
 }
 

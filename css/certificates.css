@@ -20,6 +20,13 @@ main section img {
   cursor: pointer;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+
+
 @media screen and (min-width: 768px) {
   main {
     flex-direction: row;
@@ -30,10 +37,4 @@ main section img {
   main section {
     margin: 25px 15px;
   }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-  }
-
 }
