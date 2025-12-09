@@ -1,69 +1,39 @@
-body {
-  margin: 0;
-  background-color: rgb(20, 15, 30);
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(20, 15, 30);
-  background-image: url("../images/back.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.03;
-  z-index: -1;
-}
-
-.header {
-  display: flex;
-  border-bottom: 5px solid rgb(60, 40, 90);
-  gap: 500px;
-}
-
-#title {
-  margin: 0;
-  text-align: center;
-  font-size: 40px;
-  color: rgb(220, 220, 220);
-  font-family: "Courier New", Courier, monospace;
-}
-
-#home {
-  background: transparent;
-  border: none;
-  width: 30px;
-  margin-left: 7px;
-  cursor: pointer;
-}
-#home img {
-  width: 30px;
-  margin-left: 7px;
-}
-#home img:hover {
-  width: 35px;
-}
-
 .projdes {
-  margin: 0;
-  margin-top: 20px;
-  margin-left: 10px;
+  /* margin: 20px 10px 0 0; */
   color: rgb(220, 220, 220);
   font-family: "Courier New", Courier, monospace;
 }
 
 .projimg {
-  margin-left: 10px;
-  margin-top: 10px;
   width: 300px;
   border-radius: 3px;
-  border-style: inset;
-  border-color: rgb(60, 40, 90);
-  border-width: 5px;
+  border: 5px inset var(--color-v3);
   cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.projimg:hover {
+  transform: scale(1.05);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0 50px 0;
+}
+
+main section {
+  margin: 10px 0;
+}
+
+main section h2.projdes {
+  font: bold 1.5em var(--outfint-font);
+}
+
+main section p.projdes {
+  font-family: monospace;
+  color: var(--color-v4);
 }

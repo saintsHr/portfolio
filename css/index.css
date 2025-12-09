@@ -1,152 +1,145 @@
-body {
-  margin: 0;
-  background-color: rgb(20, 15, 30);
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(20, 15, 30);
-  background-image: url("../images/back.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.03;
-  z-index: -1;
-}
-
-.header {
-  display: flex;
-  border-bottom: 5px solid rgb(60, 40, 90);
-  gap: 500px;
-}
-
-#title {
-  margin: 0;
+main {
+  margin: 0 25px;
   text-align: center;
-  font-size: 40px;
-  color: rgb(220, 220, 220);
-  font-family: "Courier New", Courier, monospace;
 }
 
-#home {
-  background: transparent;
-  border: none;
-  width: 30px;
-  margin-left: 7px;
-  cursor: pointer;
-}
-#home img {
-  width: 30px;
-  margin-left: 7px;
-}
-#home img:hover {
-  width: 35px;
+main section.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#hello {
-  margin: 0;
-  margin-top: 100px;
-  margin-left: 13px;
-  color: rgb(220, 220, 220);
+main section.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0 100px;
 }
 
-#name {
-  color: rgb(220, 220, 220);
-  margin: 0;
-  margin-left: 10px;
-}
-
-#brief {
-  color: rgb(150, 150, 150);
-  margin: 0;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.redirect {
-  margin: 0;
-  margin-top: 25px;
-  margin-left: 20px;
+main section.btns a.redirect {
+  margin: 10px;
+  border: 5px outset var(--color-v3);
   border-radius: 10px;
-  border-width: 5px;
-  border-style: outset;
-  border-color: rgb(60, 40, 90);
-  background-color: rgb(50, 30, 80);
+  background-color: var(--color-v5);
   width: 150px;
   height: 40px;
-  color: rgb(220, 220, 220);
-  font-size: 15px;
-  font-weight: bold;
+  color: var(--color-v1);
+  font: bold 15px var(--manrope-font);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.redirect:hover {
-  margin: 0;
-  margin-top: 25px;
-  margin-left: 20px;
-  border-radius: 10px;
-  border-width: 3px;
-  border-style: outset;
-  border-color: rgb(80, 60, 110);
-  background-color: rgb(70, 50, 100);
-  width: 150px;
-  height: 40px;
-  color: rgb(220, 220, 220);
+
+main section.introduction h2 {
+  margin: 25px 13px 0 0;
+  color: var(--color-v1);
+  font-size: 1.2em;
+}
+
+main section.introduction h1 {
+  font: bold 1.5em var(--poppins-font);
+  color: var(--color-v1);
+  margin: 0 10px 0 0;
+}
+
+main section.introduction p {
+  font: normal 0.8em var(--poppins-font);
+  color: var(--color-v4);
+  margin: 10px 10px 0 0;
+}
+
+
+main section.btns a.redirect:hover {
+  border: 3px outset var(--color-v6);
+  background-color: var(--color-v7);
   font-size: 16px;
-  font-weight: bold;
 }
 
-#github {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin: 20px;
-  z-index: 1;
-  width: 40px;
-  border-radius: 5px;
-  border-style: outset;
-  border-color: rgb(80, 60, 110);
-  cursor: pointer;
+footer {
+  width: 100%;
+  display: flex;
+  background-color: var(--color-v5);
+  justify-content: center;
+  align-items: center;
 }
 
-#email {
-  position: fixed;
-  bottom: 0;
-  left: 60px;
-  margin: 20px;
-  z-index: 1;
-  width: 40px;
-  border-radius: 5px;
-  border-style: outset;
-  border-color: rgb(80, 60, 110);
-  cursor: pointer;
+
+
+@media screen and (min-width: 480px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  main section.introduction h2 {
+    font-size: 1.5em;
+  }
+
+  main section.introduction h1 {
+    font-size: 1.8em;
+  }
+
+  main section.introduction p {
+    font-size: 0.9em;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
-#github:hover {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin: 20px;
-  z-index: 1;
-  width: 42px;
-  border-radius: 5px;
-  border-style: outset;
-  border-color: rgb(100, 80, 130);
+@media screen and (min-height: 720px) {
+  main {
+    margin: 25px 0;
+  }
+
+  main section.btns {
+    margin: 50px 0;
+  }
 }
 
-#email:hover {
-  position: fixed;
-  bottom: 0;
-  left: 60px;
-  margin: 20px;
-  z-index: 1;
-  width: 42px;
-  border-radius: 5px;
-  border-style: outset;
-  border-color: rgb(100, 80, 130);
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 2.7em;
+  }
+
+  main section.introduction h2 {
+    font-size: 1.8em;
+  }
+
+  main section.introduction h1 {
+    font-size: 2.2em;
+  }
+
+  main section.introduction p {
+    font-size: 1.1em;
+  }
+
+  main section.btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main section.introduction h2 {
+    font-size: 3em;
+  }
+
+  main section.introduction h1 {
+    font-size: 3.5em;
+  }
+
+  main section.introduction p {
+    font-size: 1.35em;
+  }
+
+  main section.btns a.redirect {
+    margin: 15px;
+    width: 250px;
+    height: 55px;
+  }
 }

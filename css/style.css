@@ -1,0 +1,126 @@
+/* Variáveis */
+:root {
+  /* Cores */
+  --color-v1: rgb(220, 220, 220);
+  --color-v2: rgb(20, 15, 30);
+  --color-v3: rgb(60, 40, 90);
+  --color-v4: rgb(150, 150, 150);
+  --color-v5: rgb(50, 30, 80);
+  --color-v6: rgb(80, 60, 110);
+  --color-v7: rgb(70, 50, 100);
+  --color-v8: rgb(100, 80, 130);
+
+  /* Fontes */
+  --outfint-font: "Outfit", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+  --tilt-warp-font: "Tilt Warp", sans-serif;
+  --manrope-font: "Manrope", sans-serif;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-v2);
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+div.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-v2);
+  background-image: url("../images/back.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.03;
+  z-index: -1;
+}
+
+header {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid var(--color-v3);
+}
+
+header h1 {
+  font: bold 2em var(--outfint-font);
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--color-v1);
+}
+
+header a {
+  background: transparent;
+  border: none;
+  width: 30px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+header nav a img {
+  width: 32px;
+  height: 32px;
+}
+
+
+
+#github {
+  margin: 10px 25px;
+  z-index: 1;
+  width: 40px;
+  border-radius: 5px;
+  border-style: outset;
+  border-color: var(--color-v6);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#github:hover {
+  border-color: var(--color-v8);
+  transform: scale(1.15);
+}
+
+#email {
+  width: 40px;
+  border: outset 5px var(--color-v6);
+  cursor: pointer;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+#email:hover {
+  transform: scale(1.15);
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 480px) {
+  header nav a img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10vw;
+  }
+
+}

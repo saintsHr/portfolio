@@ -1,45 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[saintsHr] Certificates</title>
-    <link rel="stylesheet" href="css/certificates.css" />
-  </head>
-  <body>
-    <div class="header">
-      <button id="home" onclick="window.location.href='/home'">
-        <img src="images/home.png" />
-      </button>
-      <div class="background"></div>
-      <h1 id="title">Certificates</h1>
-    </div>
-    <div id="certs">
-      <div id="cert1">
-        <h2 class="certname">CS50 Certificate</h2>
-        <p class="certdes">
-          Awarded by <b>Harvard University</b><br />
-          Cambridge, Massachusetts
-        </p>
-        <img
-          class="certimg"
-          onclick="window.open('https://certificates.cs50.io/50e09458-5689-4b3f-860f-829dcd3ea2bb.png?size=letter', '_blank')"
-          src="images/CS50x.png"
-          alt="Placeholder"
-        />
-      </div>
-      <div id="cert2">
-        <h2 class="certname">CLP Programming Certificate</h2>
-        <p class="certdes">
-          Awarded by <b>Mitsubishi Electric</b><br />
-          Barueri, São Paulo
-        </p>
-        <img
-          class="certimg"
-          onclick="window.open('https://mitsubishielectric.eadplataforma.app/certificate/view/0062396/2025-10-08', '_blank')"
-          src="images/clp.png"
-          alt="Placeholder"
-        />
-      </div>
-    </div>
-  </body>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/profile.jpg" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/certificates.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+
+    <header>
+      <h1 id="title">Portfolio</h1>
+
+      <nav>
+        <a href="index.html"><img src="https://img.icons8.com/liquid-glass/256/exterior.png" alt="home"></a>
+        <a href="projects.html"><img src="https://img.icons8.com/liquid-glass/256/idea.png" alt="projects"></a>
+        <a href="skills.html"><img src="https://img.icons8.com/liquid-glass/256/brain.png" alt="skills"></a>
+        <a href="certificates.html"><img src="https://img.icons8.com/liquid-glass/256/certificate.png" alt="certificates"></a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>CS50 Certificate</h2>
+        <p> Awarded by <strong>Harvard University</strong><br>Cambridge, Massachusetts</p>
+
+        <a href="https://certificates.cs50.io/50e09458-5689-4b3f-860f-829dcd3ea2bb.png?size=letter" target="_blank">
+          <img src="images/CS50x.png" alt="CS50 Certificate">
+        </a>
+      </section>
+
+      <section>
+        <h2>CLP Programming Certificate</h2>
+        <p> Awarded by <strong>Mitsubishi Electric</strong><br />Barueri, São Paulo</p>
+
+        <a href="https://mitsubishielectric.eadplataforma.app/certificate/view/0062396/2025-10-08" target="_blank">
+          <img src="images/clp.png" alt="CLP Programming Certificate">
+        </a>
+      </section>
+    </main>
+</body>
 </html>
