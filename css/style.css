@@ -1,0 +1,18 @@
+/* Variáveis */
+:root {
+  /* Cores */
+  --color-v1: rgb(220, 220, 220);
+  --color-v2: rgb(20, 15, 30);
+  --color-v3: rgb(60, 40, 90);
+  --color-v4: rgb(150, 150, 150);
+  --color-v5: rgb(50, 30, 80);
+  --color-v6: rgb(80, 60, 110);
+  --color-v7: rgb(70, 50, 100);
+  --color-v8: rgb(100, 80, 130);
+
+  /* Fontes */
+  --outfint-font: "Outfit", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+  --tilt-warp-font: "Tilt Warp", sans-serif;
+  --manrope-font: "Manrope", sans-serif;
+}
