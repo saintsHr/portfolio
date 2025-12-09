@@ -1,66 +1,43 @@
-body {
-  margin: 0;
-  background-color: rgb(20, 15, 30);
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+main {
+  margin-bottom: 75px;
 }
 
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(20, 15, 30);
-  background-image: url("../images/back.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.03;
-  z-index: -1;
+main section {
+  background-color: var(--color-v5);
+  margin: 25px 15px;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-family: var(--poppins-font);
+  box-shadow: 0 0 7px var(--color-v5);
 }
 
-.header {
-  display: flex;
-  border-bottom: 5px solid rgb(60, 40, 90);
-  gap: 500px;
-}
-
-#title {
-  margin: 0;
-  text-align: center;
-  font-size: 40px;
-  color: rgb(220, 220, 220);
-  font-family: "Courier New", Courier, monospace;
-}
-
-#home {
-  background: transparent;
-  border: none;
-  width: 30px;
-  margin-left: 7px;
-  cursor: pointer;
-}
-#home img {
-  width: 30px;
-  margin-left: 7px;
-}
-#home img:hover {
-  width: 35px;
-}
-
-.skillTitle {
+main section h2 {
   color: rgb(220, 220, 220);
   margin-left: 10px;
+  font: lighter 1.5em var(--tilt-warp-font);
 }
 
-.skillList {
-  color: rgb(220, 220, 220);
+main section ul {
+  color: var(--color-v1);
+  list-style: none;
 }
 
-.divider {
-  width: 700px;
-  height: 4px;
-  background-color: rgb(220, 220, 220);
-  margin-top: 30px;
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main section {
+    flex-basis: 320px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main section {
+    flex-basis: 450px;
+  }
 }

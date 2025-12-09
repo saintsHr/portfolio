@@ -1,82 +1,33 @@
-body {
-  margin: 0;
-  background-color: rgb(20, 15, 30);
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(20, 15, 30);
-  background-image: url("../images/back.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.03;
-  z-index: -1;
-}
-
-.header {
+main {
   display: flex;
-  border-bottom: 5px solid rgb(60, 40, 90);
-  gap: 500px;
+  flex-direction: column;
+  align-items: center;
 }
 
-#title {
-  margin: 0;
-  text-align: center;
-  font-size: 40px;
-  color: rgb(220, 220, 220);
-  font-family: "Courier New", Courier, monospace;
+main section {
+  margin: 25px 0;
 }
 
-#home {
-  background: transparent;
-  border: none;
-  width: 30px;
-  margin-left: 7px;
-  cursor: pointer;
-}
-#home img {
-  width: 30px;
-  margin-left: 7px;
-}
-#home img:hover {
-  width: 35px;
+main section h2, main section p {
+  color: var(--color-v1);
 }
 
-.certname {
-  margin: 0;
-  margin-top: 25px;
-  margin-left: 10px;
-  color: rgb(220, 220, 220);
-  font-family: "Courier New", Courier, monospace;
-}
-
-.certdes {
-  margin: 0;
-  margin-top: 20px;
-  margin-left: 10px;
-  color: rgb(220, 220, 220);
-  font-family: "Courier New", Courier, monospace;
-}
-
-.certimg {
-  margin-left: 10px;
-  margin-top: 10px;
+main section img {
+  /* margin: 10px 10px 0 0; */
   width: 300px;
+  border: 5px inset var(--color-v3);
   border-radius: 3px;
-  border-style: inset;
-  border-color: rgb(60, 40, 90);
-  border-width: 5px;
   cursor: pointer;
 }
 
-#certs {
-  display: flex;
-  gap: 10px;
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+
+  main section {
+    margin: 25px 15px;
+  }
 }
