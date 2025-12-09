@@ -17,32 +17,40 @@
 <body>
     <div class="background"></div>
 
-    <header class="header">
-      <h1 id="title">Certificates</h1>
+    <header>
+      <h1 id="title">Portfolio</h1>
 
-      <button id="home" onclick="window.location.href='/home'">
-        <img src="images/home.png">
-      </button>
+      <nav>
+        <a href="index.html"><img src="https://img.icons8.com/liquid-glass/256/exterior.png" alt="home"></a>
+        <a href="projects.html"><img src="https://img.icons8.com/liquid-glass/256/idea.png" alt="projects"></a>
+        <a href="skills.html"><img src="https://img.icons8.com/liquid-glass/256/brain.png" alt="skills"></a>
+        <a href="certificates.html"><img src="https://img.icons8.com/liquid-glass/256/certificate.png" alt="certificates"></a>
+      </nav>
     </header>
 
     <main>
       <section>
         <h2>CS50 Certificate</h2>
         <p> Awarded by <strong>Harvard University</strong><br>Cambridge, Massachusetts</p>
-        <img onclick="window.open('https://certificates.cs50.io/50e09458-5689-4b3f-860f-829dcd3ea2bb.png?size=letter', '_blank')" src="images/CS50x.png" alt="Placeholder">
+
+        <a href="https://certificates.cs50.io/50e09458-5689-4b3f-860f-829dcd3ea2bb.png?size=letter" target="_blank">
+          <img src="images/CS50x.png" alt="CS50 Certificate">
+        </a>
       </section>
 
       <section>
         <h2>CLP Programming Certificate</h2>
-        <p> Awarded by <b>Mitsubishi Electric</b><br />Barueri, São Paulo
-        </p>
-        <img onclick="window.open('https://mitsubishielectric.eadplataforma.app/certificate/view/0062396/2025-10-08', '_blank')" src="images/clp.png" alt="Placeholder">
+        <p> Awarded by <b>Mitsubishi Electric</b><br />Barueri, São Paulo</p>
+
+        <a href="https://mitsubishielectric.eadplataforma.app/certificate/view/0062396/2025-10-08" target="_blank">
+          <img src="images/clp.png" alt="CLP Programming Certificate">
+        </a>
       </section>
     </main>
 
     <footer>
-      <img id="github" src="/images/github.png" alt="GithubIcon" onclick="window.open('https://github.com/saintsHr', '_blank')">
-      <img id="email" src="/images/email.png" alt="EmailIcon" onclick="window.open('mailto:hiqkrs@gmail.com', '_blank')" target="_blank">
+      <a href="https://github.com/saintsHr" target="_blank"><img id="github" src="images/github.png" alt="Github"></a>
+      <a href="mailto:hiqkrs@gmail.com" target="_blank"><img id="email" src="images/email.png" alt="Email"></a>
     </footer>
 </body>
 </html>

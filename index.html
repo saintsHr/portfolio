@@ -19,16 +19,20 @@
 
     <header>
       <h1 id="title">Portfolio</h1>
-      <button id="home" onclick="window.location.href='/home'">
-          <img src="images/home.png">
-      </button>
+
+      <nav>
+        <a href="index.html"><img src="https://img.icons8.com/liquid-glass/256/exterior.png" alt="home"></a>
+        <a href="projects.html"><img src="https://img.icons8.com/liquid-glass/256/idea.png" alt="projects"></a>
+        <a href="skills.html"><img src="https://img.icons8.com/liquid-glass/256/brain.png" alt="skills"></a>
+        <a href="certificates.html"><img src="https://img.icons8.com/liquid-glass/256/certificate.png" alt="certificates"></a>
+      </nav>
     </header>
 
     <main>
       <section class="introduction">
-        <h2 id="hello">Hello 👋🏻, I am</h2>
-        <h1 id="name">Henrique Rodrigues Santos</h1>
-        <p id="brief">
+        <h2>Hello 👋🏻, I am</h2>
+        <h1>Henrique Rodrigues Santos</h1>
+        <p>
           Passionate Software Developer with experience in front-end<br />
           development, desktop aplications, and low-level systems<br />
           programming, including kernels and embedded systems.
@@ -36,15 +40,15 @@
       </section>
 
       <section class="btns">
-        <button class="redirect" onclick="window.location.href='/projects'">Projects</button>
-        <button class="redirect" onclick="window.location.href='/skills'">Skills</button>
-        <button class="redirect" onclick="window.location.href='/certificates'">Certificates</button>
+        <a class="redirect" href="projects.html">Projects</a>
+        <a class="redirect" href="skills.html">Skills</a>
+        <a class="redirect" href="certificates.html">Certificates</a>
       </section>
     </main>
 
     <footer>
-      <img id="github" src="/images/github.png" alt="GithubIcon" onclick="window.open('https://github.com/saintsHr', '_blank')">
-      <img id="email" src="/images/email.png" alt="EmailIcon" onclick="window.open('mailto:hiqkrs@gmail.com', '_blank')" target="_blank">
+      <a href="https://github.com/saintsHr" target="_blank"><img id="github" src="images/github.png" alt="Github"></a>
+      <a href="mailto:hiqkrs@gmail.com" target="_blank"><img id="email" src="images/email.png" alt="Email"></a>
     </footer>
 </body>
 </html>
