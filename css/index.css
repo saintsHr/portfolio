@@ -17,7 +17,7 @@ main section.btns {
   margin: 15px 0 100px;
 }
 
-.redirect {
+main section.btns a.redirect {
   margin: 10px;
   border: 5px outset var(--color-v3);
   border-radius: 10px;
@@ -28,54 +28,52 @@ main section.btns {
   font: bold 15px var(--manrope-font);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.redirect:hover {
+main section.introduction h2 {
+  margin: 25px 13px 0 0;
+  color: var(--color-v1);
+  font-size: 1.2em;
+}
+
+main section.introduction h1 {
+  font: bold 1.5em var(--poppins-font);
+  color: var(--color-v1);
+  margin: 0 10px 0 0;
+}
+
+main section.introduction p {
+  font: normal 0.8em var(--poppins-font);
+  color: var(--color-v4);
+  margin: 10px 10px 0 0;
+}
+
+
+main section.btns a.redirect:hover {
   border: 3px outset var(--color-v6);
   background-color: var(--color-v7);
   font-size: 16px;
 }
 
 
-
 @media screen and (min-width: 480px) {
-  #title {
+  header h1 {
     font-size: 2.5em;
   }
 
-  #hello {
+  main section.introduction h2 {
     font-size: 1.5em;
   }
 
-  #name {
+  main section.introduction h1 {
     font-size: 1.8em;
   }
 
-  #brief {
+  main section.introduction p {
     font-size: 0.9em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #title {
-    font-size: 2.7em;
-  }
-
-  #hello {
-    font-size: 1.8em;
-  }
-
-  #name {
-    font-size: 2.2em;
-  }
-
-  #brief {
-    font-size: 1.1em;
-  }
-
-  main section.btns {
-    flex-direction: row;
-    justify-content: center;
   }
 }
 
@@ -86,5 +84,53 @@ main section.btns {
 
   main section.btns {
     margin: 50px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 2.7em;
+  }
+
+  main section.introduction h2 {
+    font-size: 1.8em;
+  }
+
+  main section.introduction h1 {
+    font-size: 2.2em;
+  }
+
+  main section.introduction p {
+    font-size: 1.1em;
+  }
+
+  main section.btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main section.introduction h2 {
+    font-size: 3em;
+  }
+
+  main section.introduction h1 {
+    font-size: 3.5em;
+  }
+
+  main section.introduction p {
+    font-size: 1.35em;
+  }
+
+  main section.btns a.redirect {
+    margin: 15px;
+    width: 250px;
+    height: 55px;
   }
 }

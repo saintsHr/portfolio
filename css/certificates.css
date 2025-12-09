@@ -30,4 +30,10 @@ main section img {
   main section {
     margin: 25px 15px;
   }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+
 }

@@ -47,18 +47,20 @@ div.background {
 header {
   padding: 10px 0;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-bottom: 5px solid var(--color-v3);
 }
 
-#title {
+header h1 {
   font: bold 2em var(--outfint-font);
   letter-spacing: 2px;
   text-align: center;
   color: var(--color-v1);
 }
 
-#home {
+header a {
   background: transparent;
   border: none;
   width: 30px;
@@ -66,37 +68,13 @@ header {
   cursor: pointer;
 }
 
-#home img {
-  width: 30px;
-  margin-left: 7px;
-}
-
-#home img:hover {
-  width: 35px;
-}
-
-#hello {
-  margin: 25px 13px 0 0;
-  color: var(--color-v1);
-  font-size: 1.2em;
-}
-
-#name {
-  font: bold 1.5em var(--poppins-font);
-  color: var(--color-v1);
-  margin: 0 10px 0 0;
-}
-
-#brief {
-  font: normal 0.8em var(--poppins-font);
-  color: var(--color-v4);
-  margin: 10px 10px 0 0;
+header nav a img {
+  width: 32px;
+  height: 32px;
 }
 
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   display: flex;
   background-color: var(--color-v5);
@@ -131,4 +109,24 @@ footer {
 #email:hover {
   transform: scale(1.15);
   z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+  header nav a img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10vw;
+  }
+
 }

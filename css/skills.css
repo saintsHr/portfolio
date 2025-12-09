@@ -34,10 +34,18 @@ main section ul {
     flex-basis: 320px;
     flex-shrink: 0;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
   main section {
     flex-basis: 450px;
   }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
+
+
